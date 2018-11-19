@@ -433,7 +433,7 @@ td{
 .about{
     width: 43.6%;
     margin-top: 108px;
-    padding-right: 108px;
+    padding-right: 30px;
 }
 .about-us h3{
     font-size: 35px;
@@ -453,7 +453,7 @@ td{
     z-index: 154;
     margin: 0;
     padding: 0;
-    width: 95%;
+    width: 85%;
 }
 .our-team{
     border-left-style: dotted;
