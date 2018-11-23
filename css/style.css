@@ -737,3 +737,74 @@ footer{
     margin: 0;
 }
 /* END FOOTER */ 
+/* @ medea*/
+@media screen and (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .logo {
+        padding: 20px; 
+    }
+    h1{
+        margin-top: 300px;
+    }
+   .register{
+       width: 90%;
+   }
+   .domain p{
+       text-align: center;
+   }
+   .buy-www {
+       width: 13%;
+   }
+   .buy-input{
+       width: 90%;
+   }
+   .buy-input-block{
+       width: 70%
+   }
+   .buy-input-block form{
+       width: 90%;
+   }
+   .buy-domain {
+       width: 15%;
+   }
+   td{
+       font-size: 12px;
+   }
+   /* PACKAGEDS */
+   .packageds-flex{
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   .package{
+       width: 45%;
+   }
+   .package li{
+       margin:0;
+   }
+   .package ul{
+       padding: 24px 0 24px 0;
+   }
+   .about-us-flex{
+       flex-direction: column;
+   }
+   .about{
+       width: 100%;
+       margin-left: 15px;
+   }
+   .our-team {
+    border-left-style: none;  
+    margin: 110px 0 110px 0;
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+   }
+   .team{
+       width: 30%;
+       margin: 0;
+   }
+}
