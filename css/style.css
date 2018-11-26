@@ -198,7 +198,7 @@ header p{
     font-family: "Lato Heavy";
     color: rgb(56, 55, 55);
     line-height: 1.2;
-    margin-top: 90px;     
+    margin: 90px 0 30px 0;     
 }
 .domain p{
     font-size: 16px;
@@ -206,7 +206,7 @@ header p{
     color: rgb(162, 162, 162);
     line-height: 1.2;
     z-index: 29;
-    margin-top: 30px;
+    margin: 0 0 50px 0;
 }
 .buy-input{
     width:74%;
@@ -312,7 +312,7 @@ td{
     border-bottom-color: #d6d6d6;
 }
 .package{
-    width: 21%;
+    width: 23%;
     background: #ffffff;
     text-align: center;
     margin: 100px 0 100px 0;
@@ -409,7 +409,7 @@ td{
     text-align: left;
     z-index: 141;
 }
-.select-plan h3{
+.select-plan h3>a{
     font-size: 16px;
     font-family: "Lato Bold";
     color: rgb(40, 40, 40);
@@ -419,17 +419,18 @@ td{
     padding-top: 20px;
     text-align: center;
     margin: 0;
+    text-decoration: none;
 }
-.bassic h3:hover{
+.bassic h3>a:hover{
     color: #f9d423;
 }
-.normal h3:hover{
+.normal h3>a:hover{
     color: #7f8c8d;
 }
-.big h3:hover{
+.big h3>a:hover{
     color: #f85f40;
 }
-.biggest h3:hover{
+.biggest h3>a:hover{
     color: #1abc9c;
 }
 /* END PACKAGEDS */
@@ -819,4 +820,5 @@ footer{
        width: 30%;
        margin: 0;
    }
+
 }
