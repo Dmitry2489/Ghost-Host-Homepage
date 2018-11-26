@@ -813,12 +813,14 @@ footer{
     border-left-style: none;  
     margin: 110px 0 110px 0;
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
    }
    .team{
        width: 30%;
-       margin: 0;
+       margin: 0 auto;
+       margin-bottom: 20px;
    }
 
 }
