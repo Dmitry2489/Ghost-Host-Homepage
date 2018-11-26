@@ -344,7 +344,7 @@ td{
     border-bottom:3px solid #f9d423; 
 }
 .bassic li>span{
-    color:#f9d423;3
+    color:#f9d423;
 }
 .normal{
     border-top: 5px solid #7f8c8d;
@@ -419,6 +419,18 @@ td{
     padding-top: 20px;
     text-align: center;
     margin: 0;
+}
+.bassic h3:hover{
+    color: #f9d423;
+}
+.normal h3:hover{
+    color: #7f8c8d;
+}
+.big h3:hover{
+    color: #f85f40;
+}
+.biggest h3:hover{
+    color: #1abc9c;
 }
 /* END PACKAGEDS */
 /* ABOUT US */
