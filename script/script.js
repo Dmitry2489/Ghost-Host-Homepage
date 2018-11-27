@@ -1,3 +1,4 @@
+// PARALLAX
 $(window).scroll(function() {
 
     var st = $(this).scrollTop();
@@ -5,7 +6,7 @@ $(window).scroll(function() {
         "transform" : "translate(0%, " + st /3 + "0%"
     });
 });
-
+// КАРУСЕЛь
 $(document).ready(function(){
 	
 	// Находим блок карусели
@@ -23,3 +24,13 @@ $(document).ready(function(){
         scrollPerPage: 1,
     });
 });
+// MENU BURGER
+/*
+(function($) {
+    $(function(){
+        $('.burger-menu').on('click', function(){
+            $(this).closest('nav').toggLeClass(nav-open);
+        });
+    });
+});
+*/
