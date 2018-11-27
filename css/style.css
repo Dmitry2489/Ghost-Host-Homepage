@@ -80,6 +80,65 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+/* burger menu*/
+/*
+.burger-menu{
+    display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+.burger-menu span{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    border-radius: 9px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; 
+}
+.burger-menu span:nth-child(1){
+    top:0px;
+}
+.burger-menu span:nth-child(2){
+    top:13px;
+}
+.burger-menu span:nth-child(3){
+    top:26px;
+}
+.burger-menu span:nth-child(4){
+    top:39px;
+}
+.burger-menu span:nth-child(5){
+    top:52px;
+}
+.burger-menu span:nth-child(6){
+    top:65px;
+}
+nav nav-open .burger-menu span:nth-child(1){
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+nav nav-open .burger-menu span:nth-child(2){
+    transform: rotate(45deg)
+}
+nav nav-open .burger-menu span:nth-child(3){
+    transform: rotate(-45deg)
+}
+nav nav-open .burger-menu span:nth-child(4){
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+nav nav-open ul{
+    opacity: 1;
+}
+*/
+/* END BURGER MENU */
 nav{
     width: 54%;
 }
@@ -792,7 +851,7 @@ footer{
     }
     .about p{
         text-align: center;
-        width: 
+        width: 100%;
     }
     .our-team {
         border-left-style: none;
@@ -809,11 +868,52 @@ footer{
         text-align: center;
         width: 25%;
     }
+    .footer-top-menu nav{
+        width: 54%;
+    }
+    .footer-block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 34px 0 34px 0;
+    }
+    .footer-block-text {
+        width: 100%
+    }
+    .footer-block-text p {
+        text-align: left;
+        border-bottom: 1px solid #4a4a4a;
+        border-right: none;
+    }
+    .footer-block-map {
+        width: 50%;
+    }
+    .footer-block-map {
+
+    }
+    /* BURGER MENU */
+    /*
+    .burger-menu{
+        display: inline-block;
+    }
+    .header-menu{
+        position: fixed;
+        display: block;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 52px;
+        background-color: rgba(0, 0, 0,0.8);
+        z-index: 1000;
+        overflow: auto;
+        opacity: 0;
+    }
+*/
 
 }
 @media screen and (max-width: 480px){
     .container{
-        width: 100%;
+        width: 90%;
     }
     /* HEDER */
     nav{
@@ -871,6 +971,13 @@ footer{
        width: 100%;
        margin-left: 15px;
    }
+   .about-us h3 {
+        text-align: left;
+    }
+    .about p {
+        text-align: left;
+        width: 100%;
+    }
    .our-team {
         border-left-style: none;  
         margin: 110px 0 110px 0;
