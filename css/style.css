@@ -377,8 +377,147 @@ td{
     margin: 100px 0 100px 0;
     box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);
 }
-.package img{
+.package-container{
+    display:flex;
+    justify-content: center; 
+}
+.package:hover{
+    box-shadow: 0px 8px 8px 6px rgba(0,0,0,0.2);
+    transform: translate(-8px, 8px);
+    transition: 0.5s;
+}
+
+.package:hover .bar{
+    transition: transform 0.5s;
+    transform: rotate(360deg) scale(1.2,1.2);
+}
+.package:hover i{
+    transition: transform 1.5s;
+    transform: rotate(360deg) scale(1.2,1.2);
+}
+.package:hover  h2{
+    transition: transform 0.5s;
+    transform: scale(1.2,1.2);
+}
+.bar {
     margin: 36px 0 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+.diamond{
+    border: 6px solid #1abc9c;
+    color: #1abc9c;
+    border-radius: 50%;
+}
+.star{
+    color: #f85f40;
+}
+.star-half{
+    color:#7f8c8d;
+}
+.anchor{
+    color:#f9d423;
+}
+.circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.arc {
+    overflow: hidden;
+    position: absolute;
+    /* make sure top & left values are - the width of the border */
+    /* the bottom right corner is the centre of the parent circle */
+    top: -6px;
+    right: 50%;
+    bottom: 50%;
+    left: -6px;
+    /* the transform origin is the bottom right corner */
+    transform-origin: 100% 100%;
+    /* rotate by any angle */
+    /* the skew angle is 90deg - the angle you want for the arc */
+    transform: rotate(90deg) skewX(30deg);
+} 
+.arc:before {
+    box-sizing: border-box;
+    display: block;
+    border: solid 6px  #f85f40;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transform: skewX(-30deg);
+    content: '';
+}
+.star-half-border{
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: 50%;
+    bottom: 50%;
+    left: -6px;
+    transform-origin: 100% 100%;
+    transform: rotate(90deg) skewX(30deg);
+}
+.star-half-border:before {
+    box-sizing: border-box;
+    display: block;
+    border: solid 6px  #7f8c8d;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transform: skewX(-30deg);
+    content: '';
+}
+.anchor-border{
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: 50%;
+    bottom: 50%;
+    left: -6px;
+    transform-origin: 100% 100%;
+    transform: rotate(90deg) skewX(30deg);
+}
+.anchor-border:before {
+    box-sizing: border-box;
+    display: block;
+    border: solid 6px  #f9d423;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transform: skewX(-30deg);
+    content: '';
+}
+.p-15{
+    transform: rotate(140deg) skewX(30deg);
+}
+.p-30{
+    transform: rotate(200deg) skewX(30deg);
+}
+.p-45{
+    transform: rotate(250deg) skewX(30deg); 
+}
+.p-60{
+    transform: rotate(300deg) skewX(30deg); 
+}
+.p-35{
+    transform: rotate(200deg) skewX(30deg);
+}
+.p-40{
+    transform: rotate(210deg) skewX(30deg); ;
+}
+.p-20{
+    transform: rotate(110deg) skewX(30deg);
 }
 .package h2{
     font-size: 16px;
@@ -479,6 +618,9 @@ td{
     text-align: center;
     margin: 0;
     text-decoration: none;
+}
+.package:hover .bassic {
+    color: #f9d423;
 }
 .bassic h3>a:hover{
     color: #f9d423;

@@ -17,7 +17,7 @@
         <div class="container">
             <div class="header_top">
                 <div class="logo">
-                    <a href="/"><img src="img/Logo.png" alt="logo"></a>
+                    <a href="./index.html"><img src="img/Logo.png" alt="logo"></a>
                 </div>
                     <nav>
                         <!-- <div class="burger-menu">
@@ -69,7 +69,7 @@
                     <p>www.</p>
                 </div>
                 <div class="buy-input-block">
-                    <form>
+                    <form method="POST">
                         <input type="text" placeholder="What do you want?">
                     </form>
                 </div>
@@ -111,15 +111,15 @@
             -->
             <table>
                 <tr>
-                    <td>.COM</td>
+                    <td>.<span>COM</span></td>
                     <td>1 Year</td>
-                    <td>$9.00 USD</td>
+                    <td>$<span>9.00</span>USD</td>
                     <td>Transfer Price No</td>
                 </tr>
                 <tr>
-                    <td>.NET</td>
-                    <td>1 Year</td>
-                    <td>$9.00 USD</td>
+                    <td>.<span>NET</span></td>
+                    <td><span>1</span> Year</td>
+                    <td>$<span>9.00</span>USD</td>
                     <td>Transfer Price No</td>
                 </tr>  
             </table>
@@ -131,7 +131,15 @@
     <div class="packageds">
         <div class="container packageds-flex">
             <div class="bassic package">
-                <img src="img/BasicPackageLevelBar.png" alt="LevelBar.png">
+                <div class="package-container">
+                    <div class="anchor bar">
+                        <div class="circle">
+                            <i class="fas fa-anchor"></i>
+                            <div class="anchor-border"></div>
+                            <div class="anchor-border p-20"></div>
+                        </div>
+                    </div>
+                </div>
                 <h2>BASIC PACKAGE</h2>
                 <ul>
                     <li>Disk Space (GB) <span>50</span></li>
@@ -148,7 +156,17 @@
                 </div>   
             </div>
             <div class="normal package">
-                <img src="img/NormalPackageLevelBar.png" alt="LevelBar.png">
+                <div class="package-container">
+                    <div class="star-half bar">
+                        <div class="circle">
+                            <i class="fas fa-star-half-alt"></i>
+                            <div class="star-half-border"></div>
+                            <div class="star-half-border p-15"></div>
+                            <div class="star-half-border p-35"></div>
+                            <div class="star-half-border p-40"></div>
+                        </div>
+                    </div>
+                </div>
                 <h2>NORMAL PACKAGE</h2>
                 <ul>
                     <li>Disk Space (GB) <span>100</span></li>
@@ -165,7 +183,18 @@
                 </div>
             </div>
             <div class="big package">
-                <img src="img/BPLevelBar.png" alt="LevelBar.png">
+                <div class="package-container">
+                    <div class="star bar">
+                        <div class="circle">
+                            <i class="fas fa-star"></i>
+                            <div class="arc"></div>
+                            <div class="arc p-15"></div>
+                            <div class="arc p-30"></div>
+                            <div class="arc p-45"></div>
+                            <div class="arc p-60"></div>
+                        </div>
+                    </div>
+                </div>
                 <h2>BIG PACKAGE</h2>
                 <ul>
                     <li>Disk Space (GB) <span>100</span></li>
@@ -182,7 +211,11 @@
                 </div>
             </div>
             <div class="biggest package">
-                <img src="img/BiggestPackageLevelBar.png" alt="LevelBar.png">
+                <div class="package-container">
+                    <div class="diamond bar">
+                        <i class="far fa-gem"></i>
+                    </div>
+                </div>
                 <h2>BIGGEST PACKAGE</h2>
                 <ul>
                     <li>Disk Space (GB) <span>100</span></li>
@@ -321,7 +354,7 @@
         <div class="container">
             <div class="footer-top-menu">
                 <div class="logo">
-                    <a href="/"><img src="img/LogoFooter.png" alt="Logo"></a>
+                    <a href="./index.html"><img src="img/LogoFooter.png" alt="Logo"></a>
                 </div>
                 <nav>
                     <ul>
